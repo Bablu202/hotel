@@ -26,7 +26,8 @@ function UpdatePasswordForm() {
           type="password"
           id="password"
           autoComplete="current-password"
-          disabled={isUpdatingUser}
+          // disabled={isUpdatingUser}
+          disabled={true}
           {...register("password", {
             required: "This field is required",
             minLength: {
@@ -45,7 +46,8 @@ function UpdatePasswordForm() {
           type="password"
           autoComplete="new-password"
           id="passwordConfirm"
-          disabled={isUpdatingUser}
+          // disabled={isUpdatingUser}
+          disabled={true}
           {...register("passwordConfirm", {
             required: "This field is required",
             validate: (value) =>
